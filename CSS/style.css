@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Lora', serif;
+}
+#navbar{
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#logo{
+    background-color: black;
+    margin: 3px 29px;
+}
+#logo img{
+    /* background-color: white; */
+    cursor: pointer;
+    height: 54px;
+    margin: 5px 19px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+#navbar ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    border-radius: 20px;
+    padding: 3px 23px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.item2 a{
+    display: inline-block;
+    position: absolute;
+    right:20px;
+    bottom: 20px;
+}
+.item3 a{
+    display: inline-block;
+    position: absolute;
+    right:140px;
+    bottom: 20px;
+}
+.movpic{
+    display: flex;
+    
+    /* background-image: url('../Images/back.jpg'); */
+    /* opacity: 0.8; */
+    height: 500px;
+    background-color: black;
+}
+.container{
+    width: 600px;
+    height: 400px;
+    margin-top: 15rem;
+    margin-left: 25rem;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border: 10px  #ffffff;
+    border-radius: 18px;
+    /* box-shadow: -1px 15px 50px #00d5ff; */
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+.container img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.sec-1 h1{
+    font-family: 'Roboto', sans-serif;
+    margin-left:350px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+.sec-1 span{
+    color: orange;
+    margin-left: 30px;
+}
+.sec-1 p{
+    margin-left: 350px;
+    font-size: 25px;
+}
+.sec-1{
+    margin-bottom: 50px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#ris .h-tr1{
+    font-size: 5rem;
+    margin: 20px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+.Mainh{
+    margin: 80px 0px;
+    color:white;
+    font-size: 5rem;
+}
+
